@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&family=Roboto:wght@300;400;500;700&display=swap");
+
 html,
 body {
   padding: 0;
@@ -13,4 +15,28 @@ a {
 
 * {
   box-sizing: border-box;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .nav-links {
+    @apply btn2 px-11 py-4 relative rounded-lg  tracking-wider leading-none overflow-hidden hover:text-teal-600 hover:border hover:border-white;
+  }
+  .nav-span {
+    @apply absolute inset-0 bg-white;
+  }
+  .nav-text {
+    @apply absolute inset-0 flex justify-center items-center;
+  }
+}
+
+.btn2 span:first-child {
+  transform: translateX(-101%);
+  transition: transform 0.3s ease-in;
+}
+.btn2:hover span {
+  transform: translateX(0);
 }
