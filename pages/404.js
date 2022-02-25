@@ -12,13 +12,13 @@ function PageNotFound({ message }) {
         height={150}
       />
       <h1 className="mt-3 font-bold font-robo text-3xl">Sorry</h1>
-      <p className="sm:px-16 text-sm text-slate-400  pt-3 font-sans ">
+      <h1 className="sm:px-16 text-sm text-slate-400  pt-3 font-sans ">
         {message ? (
           <p>{message}</p>
         ) : (
           "we couldn't find the product you looking for please go to the"
         )}
-      </p>
+      </h1>
       <div>
         <Link href="/">
           <button className="px-10 py-2 mt-2 bg-blue-600 rounded-full text-white hover:bg-blue-300 hover:text-gray-600">
