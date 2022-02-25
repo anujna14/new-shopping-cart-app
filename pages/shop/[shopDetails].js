@@ -24,7 +24,7 @@ const ShopDetailsPage = ({ product }) => {
         <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0 ">
           <Image
             className="object-contain object-center rounded "
-            alt="hero"
+            alt={product.product}
             src={product.image}
             width={720}
             height={600}

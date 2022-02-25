@@ -17,7 +17,13 @@ const CartPage = () => {
     <div className="container mx-auto mt-32">
       {cart.length === 0 ? (
         <ErrorCard>
-          <Image src={img} width={200} height={200} className="object-cover" />
+          <Image
+            src={img}
+            width={200}
+            height={200}
+            className="object-cover"
+            alt="notFoundImage"
+          />
           <h1 className="font-bold text-3xl">Your cart is empty </h1>
           <h1 className="text-sm text-gray-400">
             You have no items in your shopping cart.

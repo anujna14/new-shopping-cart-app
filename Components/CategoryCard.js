@@ -4,7 +4,13 @@ import Image from "next/image";
 const CategoryCard = ({ image, name }) => {
   return (
     <div className="grid sm:grid-col-2 shadow-md m-4 rounded-lg">
-      <Image className="object-cover" src={image} height={700} width={1000} />
+      <Image
+        className="object-cover"
+        src={image}
+        height={700}
+        width={1000}
+        alt={name}
+      />
       <Link href={`/category/${name.toLowerCase()}`}>
         <div className="flex flex-col justify-center items-center pt-2 mb-4">
           <h3 className="capitalize font-robo">{name}</h3>

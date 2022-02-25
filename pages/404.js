@@ -8,6 +8,7 @@ function PageNotFound({ message }) {
         src={img}
         className="bg-yellow-400 rounded-full object-contain object-center border-4 border-yellow-500 shadow-md "
         width={150}
+        alt="error-image"
         height={150}
       />
       <h1 className="mt-3 font-bold font-robo text-3xl">Sorry</h1>

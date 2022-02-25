@@ -4,7 +4,7 @@ import {
   incrementQuantity,
   decrementQuantity,
   removeFromCart,
-} from "../redux/cart.slice";
+} from "../Redux/cart.slice";
 import { toast } from "react-toastify";
 
 const CartCard = ({ cartItem }) => {
